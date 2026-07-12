@@ -1,14 +1,30 @@
-The purpose of this project is to predict customer churn for the E-Commerce Company. By choosing a statistical model to assist the company in predicting customer churn the company will be able see the likelihood a customer will churn, identify high risk customers early, and develop targeted marketing strategies aimed at reducing customer churn.
+# E-Commerce Customer Churn Prediction
 
+Predicting customer churn for an e-commerce company on an
+imbalanced dataset, comparing five supervised classification models.
 
+## Goal
 
-Logistic Regression, Support Vector Machine (SVM), Decision Trees, Random Forest, and XGBoost models will all be used and then compared to see which best suites the needs of the E Commerce Company. Five supervised classification models representing linear, nonlinear, and ensemble-based approaches were implemented to predict customer churn. These models were trained using consistent procedures to enable a fair performance comparison. 
+Identify high-risk customers early so the company can deploy
+targeted retention strategies, using the likelihood of churn
+produced by the model.
 
+## Models Compared
 
+Logistic Regression, SVM, Decision Tree, Random Forest, XGBoost —
+five supervised approaches (linear, nonlinear, ensemble) trained
+with consistent procedures for a fair comparison.
 
-Results: The best two models for the E Commerce Company are the SVM and the Random Forest. The SVM model the best at classifying false negatives, while the Random Forest model has the best overall accuracy. Both models are effective and can be implemented at the E Commerce Company to help predict customer churn. 
+## Results
 
+- **SVM** — best at minimizing false negatives (missed churners)
+- **Random Forest** — best overall accuracy
 
+Both are recommended for deployment depending on whether the
+business prioritizes recall (SVM) or accuracy (Random Forest).
 
+## Contents
 
-
+- `Final_project.ipynb` — full analysis workflow
+- `app.py` — model serving application
+- `E Commerce Dataset.csv` — source data
